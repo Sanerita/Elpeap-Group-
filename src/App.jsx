@@ -4,16 +4,20 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import GetStarted from "./components/GetStarted"; // Import the new page
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="d-flex flex-column min-vh-100">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/services" element={<Services />} />
-        </Routes>
+        <div className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/get-started" element={<GetStarted />} /> {/* Add this route */}
+          </Routes>
+        </div>
         <Footer />
       </div>
     </Router>
