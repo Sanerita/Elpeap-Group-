@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, Button, Form } from "react-bootstrap";
-import logo from "../assets/logo.png"; // Import the logo
+import logo from "../assets/logo.jpg"; // Import the logo
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
