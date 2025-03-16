@@ -12,3 +12,17 @@ body {
   .btn-custom:hover {
     background-color: #45a049;
   }
+
+  /* Custom styles for the About page */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  color: #4CAF50; /* Green color for icons */
+}

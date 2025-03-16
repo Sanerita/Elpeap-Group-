@@ -7,7 +7,7 @@ const About = () => {
       <div className="row align-items-center">
         <div className="col-md-6">
           <img
-            src="/about-image.jpg" // Replace with your image
+            src="elpeapgroup.png" // Replace with your image
             alt="About Us"
             className="img-fluid rounded shadow"
           />
