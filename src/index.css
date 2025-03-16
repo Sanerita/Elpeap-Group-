@@ -26,3 +26,17 @@ body {
 .bi {
   color: #4CAF50; /* Green color for icons */
 }
+
+/* footer section */
+/* Custom styles for the footer */
+footer a:hover {
+  color: #c0ffc0 !important; /* Light green on hover */
+}
+
+footer .bi {
+  transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2); /* Enlarge icons on hover */
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import elpeapgroup from "../assets/elpeapgroup.png"; // Import the image
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="row align-items-center">
         <div className="col-md-6">
           <img
-            src="elpeapgroup.png" // Replace with your image
+             src={elpeapgroup} // Use the imported image
             alt="About Us"
             className="img-fluid rounded shadow"
           />
