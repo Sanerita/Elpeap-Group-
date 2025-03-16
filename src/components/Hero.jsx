@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="bg-success text-white py-5">
       <div className="container text-center">
-        <h1 className="display-4 fw-bold mb-4">Welcome to My Business</h1>
+        <h1 className="display-4 fw-bold mb-4">Welcome to ELPEAP Technologies</h1>
         <p className="lead mb-4">
           We provide top-notch web development, e-commerce solutions, and social
           media marketing for small businesses.

@@ -5,7 +5,7 @@ import Services from "./Services";
 import CTA from "./CTA";
 import Testimonials from "./Testimonials";
 import Portfolio from "./Portfolio";
-import Footer from "./Footer";
+
 
 const Home = () => {
   return (

@@ -10,9 +10,9 @@ const GetStarted = () => {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4">Our Services & Quotation</h1>
+      <h1 className="text-center mb-4">Request a Quotation</h1>
 
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <h2>Our Services</h2>
         <ul className="list-unstyled">
           <li className="mb-3">
@@ -28,11 +28,11 @@ const GetStarted = () => {
             targeted social media campaigns.
           </li>
         </ul>
-      </div>
+      </div> */}
 
       <hr />
 
-      <h2 className="mb-4">Request a Quotation</h2>
+      {/* <h2 className="mb-4">Request a Quotation</h2> */}
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>
