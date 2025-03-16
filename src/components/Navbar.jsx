@@ -47,16 +47,16 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <button className="nav-link btn btn-link"onClick={handleShow} >
+            <Link to="/contact" className="nav-link">
                 Contact Us
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Contact Modal */}
-      <Modal show={showModal} onHide={handleClose}>
+       <Modal show={showModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Contact Us</Modal.Title>
         </Modal.Header>

@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import About from "./About";
 import CTA from "./CTA";
 import Testimonials from "./Testimonials";
-import Portfolio from "./Portfolio";
+// import Portfolio from "./Portfolio";
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <About />
       <CTA />
       <Testimonials />
-      <Portfolio />
+      {/* <Portfolio /> */}
     </div>
   );
 };
