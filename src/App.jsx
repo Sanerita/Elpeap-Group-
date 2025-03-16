@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Services from "./components/Services";
 import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/contact" element={<ContactPage />} /> {/* Add this route */}
           </Routes>
         </div>
         <Footer />

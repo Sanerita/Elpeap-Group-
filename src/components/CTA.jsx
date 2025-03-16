@@ -1,11 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; 
 
 const CTA = () => {
   
-  const handleCont = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log("Quotation form submitted!");
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleCont = () => {
+    navigate("/contact"); // Redirect to the contact page
   };
 
     return (

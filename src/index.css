@@ -40,3 +40,13 @@ footer .bi {
 footer .bi:hover {
   transform: scale(1.2); /* Enlarge icons on hover */
 }
+
+/* Custom styles for the contact page */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

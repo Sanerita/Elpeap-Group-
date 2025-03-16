@@ -47,7 +47,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <button className="nav-link btn btn-link" onClick={handleShow}>
+              <button className="nav-link btn btn-link"onClick={handleShow} >
                 Contact Us
               </button>
             </li>
