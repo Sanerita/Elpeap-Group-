@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, Button, Form } from "react-bootstrap";
-import logo from "../assets/logo.jpg"; // Import the logo
+import Capture from "../assets/Capture.jpg"; // Import the logo
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
+  // const handleShow = () => setShowModal(true);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success">
       <div className="container">
          {/* Logo */}
          <Link to="/" className="navbar-brand">
-          <img
-            src={logo} // Use the imported logo
-            alt="My Business Logo"
-            width="100"
-            height="auto"
-            className="d-inline-block align-text-top"
-          />
-        </Link>
+  <img
+    src={Capture} // Use the imported logo
+    alt="My Business Logo"
+    width="60"
+    height="60" // Changed to match width for perfect circle
+    className="d-inline-block align-text-top rounded-circle object-fit-cover"
+  />
+</Link>
 
         <button
           className="navbar-toggler"

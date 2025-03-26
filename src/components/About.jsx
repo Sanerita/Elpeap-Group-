@@ -10,7 +10,7 @@ const About = () => {
           <img
              src={elpeapgroup} // Use the imported image
             alt="About Us"
-            className="img-fluid rounded shadow"
+            className="img-fluid"
           />
         </div>
         <div className="col-md-6">

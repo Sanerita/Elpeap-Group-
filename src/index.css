@@ -50,3 +50,8 @@ footer .bi:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* In your CSS file */
+.navbar-brand img {
+  border: 2px solid rgb(28, 204, 89); /* Optional: adds white border */
+  box-shadow: 0 0 5px rgba(227, 229, 227, 0.2); /* Optional: subtle shadow */
+}
