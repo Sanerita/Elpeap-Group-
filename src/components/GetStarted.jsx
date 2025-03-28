@@ -39,7 +39,7 @@ const GetStarted = () => {
               
               <Form.Group className="mb-3">
                 <Form.Label>Your Name</Form.Label>
-                <Form.Control type="text" placeholder="John Doe" required />
+                <Form.Control type="text" placeholder="Name Surname" required />
               </Form.Group>
 
               <Form.Group className="mb-3">
