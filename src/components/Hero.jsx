@@ -13,9 +13,10 @@ const Hero = () => {
       <div className="container text-center">
         <h1 className="display-4 fw-bold mb-4">Welcome to ELPEAP Technologies</h1>
         <p className="lead mb-4">
-          We provide top-notch web development, e-commerce solutions, and social
-          media marketing for small businesses.
-        </p>
+  Helping small businesses thrive online with complete tech solutions: 
+  <br className="d-none d-md-block" />
+  We handle your website, online store, social media, and IT - so you can focus on your business
+</p>
         <button className="btn btn-light btn-lg" onClick={handleGetStarted}>
           Get Started
         </button>

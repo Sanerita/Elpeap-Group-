@@ -58,7 +58,7 @@ const Footer = () => {
             <h5 className="fw-bold mb-3">Follow Us</h5>
             <div className="d-flex gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/elpeap-group/?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-decoration-none"
@@ -66,7 +66,7 @@ const Footer = () => {
                 <i className="bi bi-linkedin fs-4"></i>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/elpeaptech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-decoration-none"

@@ -1,77 +1,132 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 
 const GetStarted = () => {
+  const [formSubmitted, setFormSubmitted] = React.useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log("Quotation form submitted!");
+    // Add form submission logic (e.g., API call, email, etc.)
+    setFormSubmitted(true);
   };
 
   return (
-    <div className="container my-5">
-      <h1 className="text-center mb-4">Request a Quotation</h1>
+    <Container className="my-5">
+      {/* Header Section */}
+      <Row className="mb-5 text-center">
+        <Col>
+          <h1 className="display-4 fw-bold mb-3">Ready to Grow?</h1>
+          <p className="lead text-muted">
+            Take the first step with a <span className="text-success">free 30-minute consultation</span>.
+            <br /> We'll discuss your goals and match you with the perfect solution.
+          </p>
+        </Col>
+      </Row>
 
-      {/* <div className="mb-5">
-        <h2>Our Services</h2>
-        <ul className="list-unstyled">
-          <li className="mb-3">
-            <strong>Web Development:</strong> We create stunning, responsive
-            websites for your business.
-          </li>
-          <li className="mb-3">
-            <strong>E-commerce Solutions:</strong> Build and manage your online
-            store with ease.
-          </li>
-          <li className="mb-3">
-            <strong>Social Media Marketing:</strong> Grow your brand with
-            targeted social media campaigns.
-          </li>
-        </ul>
-      </div> */}
+      {/* Two-Column Layout */}
+      <Row className="g-4">
+        {/* Left Column - Form */}
+        <Col md={6}>
+          {formSubmitted ? (
+            <Alert variant="success" className="text-center">
+              <i className="bi bi-check-circle-fill fs-1"></i>
+              <h3 className="mt-3">Thank You!</h3>
+              <p>We'll contact you within 24 hours to schedule your consultation.</p>
+            </Alert>
+          ) : (
+            <Form onSubmit={handleSubmit} className="shadow-sm p-4 rounded">
+              <h3 className="mb-4">Tell Us About Your Project</h3>
+              
+              <Form.Group className="mb-3">
+                <Form.Label>Your Name</Form.Label>
+                <Form.Control type="text" placeholder="John Doe" required />
+              </Form.Group>
 
-      <hr />
+              <Form.Group className="mb-3">
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" placeholder="you@business.com" required />
+              </Form.Group>
 
-      {/* <h2 className="mb-4">Request a Quotation</h2> */}
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter your name" required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter your email" required />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Phone Number</Form.Label>
-          <Form.Control
-            type="tel"
-            placeholder="Enter your phone number"
-            required
-          />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Service Interested In</Form.Label>
-          <Form.Select required>
-            <option value="">Select a service</option>
-            <option value="web-development">Web Development</option>
-            <option value="e-commerce">E-commerce Solutions</option>
-            <option value="social-media">Social Media Marketing</option>
-          </Form.Select>
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Label>Additional Information</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows={3}
-            placeholder="Tell us more about your project"
-          />
-        </Form.Group>
-        <Button variant="success" type="submit">
-          Submit
-        </Button>
-      </Form>
-    </div>
+              <Form.Group className="mb-3">
+                <Form.Label>What services are you interested in?</Form.Label>
+                <Form.Select required>
+                  <option value="">Select one...</option>
+                  <option>Website Development</option>
+                  <option>E-commerce Store</option>
+                  <option>Social Media Marketing</option>
+                  <option>IT Support</option>
+                  <option>Multiple Services</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-3">
+                <Form.Label>Project Details</Form.Label>
+                <Form.Control 
+                  as="textarea" 
+                  rows={3} 
+                  placeholder="Briefly describe your goals, timeline, and budget (if any)" 
+                />
+              </Form.Group>
+
+              <Button variant="success" type="submit" size="lg" className="w-100">
+                Get My Free Consultation
+              </Button>
+            </Form>
+          )}
+        </Col>
+
+        {/* Right Column - Benefits */}
+        <Col md={6}>
+          <div className="bg-light p-4 h-100 rounded">
+            <h3 className="mb-4">Why Start With Us?</h3>
+            
+            <div className="d-flex mb-3">
+              <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <div>
+                <h5 className="fw-bold">No-Risk Consultation</h5>
+                <p className="text-muted">Free 30-minute strategy session with no obligation</p>
+              </div>
+            </div>
+
+            <div className="d-flex mb-3">
+              <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <div>
+                <h5 className="fw-bold">Tailored Solutions</h5>
+                <p className="text-muted">Custom recommendations based on your business size and goals</p>
+              </div>
+            </div>
+
+            <div className="d-flex mb-3">
+              <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <div>
+                <h5 className="fw-bold">Transparent Pricing</h5>
+                <p className="text-muted">Clear quotes with no hidden fees</p>
+              </div>
+            </div>
+
+            <div className="d-flex">
+              <i className="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+              <div>
+                <h5 className="fw-bold">Quick Start</h5>
+                <p className="text-muted">Most projects begin within 5 business days</p>
+              </div>
+            </div>
+
+            <hr className="my-4" />
+
+            <div className="text-center">
+              <h5 className="fw-bold mb-3">Prefer to talk now?</h5>
+              <Button variant="outline-success" href="tel:+1234567890" className="me-2">
+                <i className="bi bi-telephone me-2"></i>Call Us
+              </Button>
+              <Button variant="outline-success" href="mailto:info@mybusiness.com">
+                <i className="bi bi-envelope me-2"></i>Email Us
+              </Button>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
