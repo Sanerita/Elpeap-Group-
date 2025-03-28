@@ -17,7 +17,7 @@ const About = () => {
           <p className="lead">
             At <span className="text-success fw-bold">Elpeap Group</span>, we are a team of passionate professionals 
             dedicated to helping small businesses thrive in the digital world. With expertise in 
-            web development, e-commerce solutions, social media marketing, and now 
+            web development, e-commerce solutions, social media marketing, and 
             <span className="text-success"> IT support</span>, we provide tailored solutions to meet your unique needs.
           </p>
         </div>
