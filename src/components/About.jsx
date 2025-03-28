@@ -1,106 +1,109 @@
 import React from "react";
-import elpeapgroup from "../assets/elpeapgroup.png"; // Import the image
 
 const About = () => {
   return (
     <div className="container my-5">
-      {/* About Us Section */}
-      <div className="row align-items-center">
+      {/* About Us Section - Updated with original text + new layout */}
+      <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-             src={elpeapgroup} // Use the imported image
-            alt="About Us"
-            className="img-fluid"
+            src="./assets/Capture.jpg"
+            alt="Our Team"
+            className="img-fluid rounded shadow"
           />
         </div>
         <div className="col-md-6">
           <h2 className="display-4 fw-bold mb-4">About Us</h2>
-          <p className="lead mb-4">
-            At <strong>ELPEAP TECHNOLOGIES</strong>, we are a team of passionate
-            professionals dedicated to helping small businesses thrive in the
-            digital world. With expertise in <strong>web development</strong>,{" "}
-            <strong>e-commerce solutions</strong>, and{" "}
-            <strong>social media marketing</strong>, we provide tailored
-            solutions to meet your unique needs.
+          <p className="lead">
+            At <span className="text-success fw-bold">Elpeap Group</span>, we are a team of passionate professionals 
+            dedicated to helping small businesses thrive in the digital world. With expertise in 
+            web development, e-commerce solutions, social media marketing, and now 
+            <span className="text-success"> IT support</span>, we provide tailored solutions to meet your unique needs.
           </p>
         </div>
       </div>
 
-      {/* Mission and Vision Section */}
-      <div className="row mt-5">
+      {/* Services Showcase - New 4-column layout */}
+      <div className="row mb-5">
+        <div className="col-12 text-center mb-4">
+          <h2 className="display-5 fw-bold">Our Services</h2>
+        </div>
+        
+        {[
+          { icon: "bi-laptop", title: "Web Development", desc: "Stunning, responsive websites" },
+          { icon: "bi-cart", title: "E-commerce", desc: "Online stores that convert" },
+          { icon: "bi-megaphone", title: "Social Media", desc: "Targeted growth strategies" },
+          { icon: "bi-headset", title: "IT Support", desc: "Reliable tech assistance" }
+        ].map((service, index) => (
+          <div key={index} className="col-md-6 col-lg-3 mb-4">
+            <div className="card h-100 border-0 shadow-sm hover-effect">
+              <div className="card-body text-center p-4">
+                <i className={`bi ${service.icon} display-4 text-success mb-3`}></i>
+                <h3 className="h5 fw-bold">{service.title}</h3>
+                <p className="text-muted">{service.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Mission/Vision - Original content with new cards */}
+      <div className="row mb-5">
         <div className="col-md-6 mb-4">
-          <div className="card h-100 border-0 shadow-sm">
+          <div className="card h-100 border-success border-2">
             <div className="card-body p-4">
-              <h3 className="card-title fw-bold mb-3">
+              <h3 className="card-title fw-bold">
                 <i className="bi bi-bullseye text-success me-2"></i>Our Mission
               </h3>
-              <p className="card-text text-muted">
-                To empower small businesses by providing innovative and
-                affordable digital solutions that drive growth, enhance online
-                presence, and maximize profitability.
+              <p>
+                To empower small businesses by providing innovative and affordable 
+                digital solutions that drive growth, enhance online presence, 
+                and maximize profitability.
               </p>
             </div>
           </div>
         </div>
         <div className="col-md-6 mb-4">
-          <div className="card h-100 border-0 shadow-sm">
+          <div className="card h-100 border-success border-2">
             <div className="card-body p-4">
-              <h3 className="card-title fw-bold mb-3">
+              <h3 className="card-title fw-bold">
                 <i className="bi bi-eye text-success me-2"></i>Our Vision
               </h3>
-              <p className="card-text text-muted">
-                To become the leading digital solutions provider for small
-                businesses, helping them succeed in an increasingly competitive
-                and digital world.
+              <p>
+                To become the leading digital solutions provider for small businesses, 
+                helping them succeed in an increasingly competitive and digital-first world.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Core Values Section */}
-      <div className="row mt-5">
-        <div className="col-12">
-          <h2 className="text-center display-4 fw-bold mb-4">Our Core Values</h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <i className="bi bi-people display-4 text-success mb-3"></i>
-                  <h3 className="card-title fw-bold mb-3">Customer Focus</h3>
-                  <p className="card-text text-muted">
-                    We prioritize our clients' needs and work tirelessly to
-                    deliver solutions that exceed their expectations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <i className="bi bi-lightbulb display-4 text-success mb-3"></i>
-                  <h3 className="card-title fw-bold mb-3">Innovation</h3>
-                  <p className="card-text text-muted">
-                    We embrace creativity and cutting-edge technology to deliver
-                    innovative solutions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <i className="bi bi-shield-check display-4 text-success mb-3"></i>
-                  <h3 className="card-title fw-bold mb-3">Integrity</h3>
-                  <p className="card-text text-muted">
-                    We conduct our business with honesty, transparency, and
-                    respect for our clients and partners.
-                  </p>
-                </div>
+      {/* Core Values - Original values with new presentation */}
+      <div className="row">
+        <div className="col-12 text-center mb-4">
+          <h2 className="display-5 fw-bold">Our Core Values</h2>
+        </div>
+        
+        {[
+          { icon: "bi-people", value: "Customer Focus", 
+            desc: "We prioritize client needs and exceed expectations" },
+          { icon: "bi-lightbulb", value: "Innovation", 
+            desc: "We embrace creativity and cutting-edge technology" },
+          { icon: "bi-shield-check", value: "Integrity", 
+            desc: "We conduct business with honesty and transparency" },
+          { icon: "bi-graph-up", value: "Growth", 
+            desc: "We help businesses scale sustainably" }
+        ].map((item, index) => (
+          <div key={index} className="col-md-6 col-lg-3 mb-4">
+            <div className="card h-100 border-0 shadow-sm">
+              <div className="card-body text-center p-4">
+                <i className={`bi ${item.icon} display-4 text-success mb-3`}></i>
+                <h3 className="h5 fw-bold">{item.value}</h3>
+                <p className="text-muted">{item.desc}</p>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
