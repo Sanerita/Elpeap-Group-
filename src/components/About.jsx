@@ -1,4 +1,6 @@
 import React from "react";
+import elpeapgroup from "../assets/elpeapgroup.png"; // Import the logo
+
 
 const About = () => {
   return (
@@ -6,11 +8,12 @@ const About = () => {
       {/* About Us Section - Updated with original text + new layout */}
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
-          <img
-            src="./assets/Capture.jpg"
-            alt="Our Team"
-            className="img-fluid rounded shadow"
-          />
+
+           <img
+              src={elpeapgroup} // Use the imported logo
+              alt="My Business Logo"
+              className="img-fluid"
+            />
         </div>
         <div className="col-md-6">
           <h2 className="display-4 fw-bold mb-4">About Us</h2>
