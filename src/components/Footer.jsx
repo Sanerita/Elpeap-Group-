@@ -18,7 +18,7 @@ const Footer = () => {
                 <i className="bi bi-telephone me-2"></i>+27781407749 
               </li>
               <li className="mb-2">
-                <i className="bi bi-envelope me-2"></i>info@elpeapgroup.com
+                <i className="bi bi-envelope me-2"></i>info@elpeapgroup.co.za
               </li>
             </ul>
           </div>

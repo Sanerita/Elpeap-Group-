@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
+import emailjs from '@emailjs/browser';
+
+// Initialize EmailJS (do this once when your app loads)
+emailjs.init('t9SZcWmLIrn5oRGUx'); // Replace with your actual key
 
 const GetStarted = () => {
-  const [formSubmitted, setFormSubmitted] = React.useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add form submission logic (e.g., API call, email, etc.)
-    setFormSubmitted(true);
+    setFormError(null);
+    
+    emailjs.sendForm(
+      'service_j6qwb3j',    // Replace with your EmailJS Service ID
+      'template_jy6bogd',   // Replace with your EmailJS Template ID
+      e.target,
+      't9SZcWmLIrn5oRGUx'     // Same as init key
+    )
+    .then(() => {
+      setFormSubmitted(true);
+      e.target.reset(); // Clear the form
+    }, (error) => {
+      console.error('Email failed:', error);
+      setFormError('Failed to send. Please email us directly at elpeapgroupsocial@gmail.com');
+    });
   };
 
   return (
@@ -35,21 +53,35 @@ const GetStarted = () => {
             </Alert>
           ) : (
             <Form onSubmit={handleSubmit} className="shadow-sm p-4 rounded">
+              {formError && <Alert variant="danger">{formError}</Alert>}
               <h3 className="mb-4">Tell Us About Your Project</h3>
               
               <Form.Group className="mb-3">
                 <Form.Label>Your Name</Form.Label>
-                <Form.Control type="text" placeholder="Name Surname" required />
+                <Form.Control 
+                  type="text" 
+                  name="from_name"
+                  placeholder="Name Surname" 
+                  required 
+                />
               </Form.Group>
 
               <Form.Group className="mb-3">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="you@business.com" required />
+                <Form.Control 
+                  type="email" 
+                  name="from_email"
+                  placeholder="you@business.com" 
+                  required 
+                />
               </Form.Group>
 
               <Form.Group className="mb-3">
                 <Form.Label>What services are you interested in?</Form.Label>
-                <Form.Select required>
+                <Form.Select 
+                  name="service_type"
+                  required
+                >
                   <option value="">Select one...</option>
                   <option>Website Development</option>
                   <option>E-commerce Store</option>
@@ -63,8 +95,10 @@ const GetStarted = () => {
                 <Form.Label>Project Details</Form.Label>
                 <Form.Control 
                   as="textarea" 
+                  name="message"
                   rows={3} 
                   placeholder="Briefly describe your goals, timeline, and budget (if any)" 
+                  required
                 />
               </Form.Group>
 
@@ -119,7 +153,7 @@ const GetStarted = () => {
               <Button variant="outline-success" href="tel:+1234567890" className="me-2">
                 <i className="bi bi-telephone me-2"></i>Call Us
               </Button>
-              <Button variant="outline-success" href="mailto:info@mybusiness.com">
+              <Button variant="outline-success" href="mailto:elpeapgroupsocial@gmail.com">
                 <i className="bi bi-envelope me-2"></i>Email Us
               </Button>
             </div>

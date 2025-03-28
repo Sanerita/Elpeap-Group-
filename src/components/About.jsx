@@ -13,6 +13,14 @@ const About = () => {
               src={elpeapgroup} // Use the imported logo
               alt="My Business Logo"
               className="img-fluid"
+              style={{
+                width: 'auto', // Maintain aspect ratio
+                height: '400px', // Set appropriate height
+                objectFit: 'contain', // Prevent distortion
+                imageRendering: '-webkit-optimize-contrast' // Sharper rendering
+              }}
+              loading="lazy" // Better page performance
+            
             />
         </div>
         <div className="col-md-6">
