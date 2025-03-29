@@ -1,14 +1,17 @@
 import React from "react";
 import elpeapgroup from "../assets/elpeapgroup.png"; // Import the logo
-
+import DiscountPopup from "./DiscountPopup"; 
 
 const About = () => {
   return (
+
+    
     <div className="container my-5">
+      <DiscountPopup />
       {/* About Us Section - Updated with original text + new layout */}
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
-
+        
            <img
               src={elpeapgroup} // Use the imported logo
               alt="My Business Logo"
