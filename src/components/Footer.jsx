@@ -74,7 +74,7 @@ const Footer = () => {
                 <i className="bi bi-instagram fs-4"></i>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61574213537105"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-decoration-none"
@@ -82,7 +82,7 @@ const Footer = () => {
                 <i className="bi bi-facebook fs-4"></i>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/elpeapgroup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white text-decoration-none"
