@@ -6,22 +6,16 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
-}
-{
-  "hosting": {
     "headers": [{
       "source": "**",
       "headers": [{
         "key": "Cache-Control",
         "value": "max-age=86400"
       }]
+    }],
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
     }]
   }
 }
