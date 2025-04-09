@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .btn-custom {
+    background-color: #45a049;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  .btn-custom:hover {
+    background-color: #45a049;
+  }
+
+  /* Custom styles for the About page */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  color: #4CAF50; /* Green color for icons */
+}
+
+/* footer section */
+/* Custom styles for the footer */
+footer a:hover {
+  color: #c0ffc0 !important; /* Light green on hover */
+}
+
+footer .bi {
+  transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2); /* Enlarge icons on hover */
+}
+
+/* Custom styles for the contact page */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* In your CSS file */
+.navbar-brand img {
+  border: 2px solid rgb(28, 204, 89); /* Optional: adds white border */
+  box-shadow: 0 0 5px rgba(227, 229, 227, 0.2); /* Optional: subtle shadow */
+}
+
+/* Discount Popup Styles */
+.discount-popup .modal-content {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.discount-visual {
+  background: linear-gradient(135deg, #28a745, #218838);
+  position: relative;
+  overflow: hidden;
+}
+
+.discount-visual::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  animation: pulse 8s infinite linear;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.discount-badge {
+  background: #fff;
+  color: #28a745;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transform: rotate(-5deg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.countdown-box {
+  background: rgba(0,0,0,0.2);
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.countdown-timer {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.discount-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.discount-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.discount-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.2);
+  transform: rotate(30deg);
+  transition: all 0.3s;
+}
+
+.discount-btn:hover::after {
+  left: 100%;
+}
