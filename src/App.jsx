@@ -6,47 +6,63 @@ import Services from "./components/Services";
 import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import ContactPage from "./components/ContactPage";
+import ScrollToTop from "./components/ScrollToTop"; // New component
 
 function App() {
   const [showButton, setShowButton] = useState(false);
 
-  // Show the button when the user scrolls down 100px
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      setShowButton(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Smooth scrolling
+      behavior: "smooth",
     });
   };
 
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      {/* Add lang attribute for better accessibility */}
+      <div className="d-flex flex-column min-vh-100" lang="en">
+        {/* Add structured data for organization */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "ELPEAP Group",
+              "url": "https://www.elpeapgroup.com",
+              "logo": "https://www.elpeapgroup.com/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/elpeapgroup",
+                "https://www.linkedin.com/company/elpeapgroup"
+              ]
+            }
+          `}
+        </script>
+        
         <Navbar />
-        <div className="flex-grow-1">
+        <ScrollToTop /> {/* New component to handle scroll restoration */}
+        
+        <main className="flex-grow-1"> {/* Semantic main tag */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/get-started" element={<GetStarted />} />
-            <Route path="/contact" element={<ContactPage />} /> {/* Add this route */}
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
-        </div>
+        </main>
+
         <Footer />
 
-        {/* Back to Top Button */}
+        {/* Enhanced Back to Top Button with ARIA label */}
         {showButton && (
           <button
             onClick={scrollToTop}
@@ -58,10 +74,8 @@ function App() {
               zIndex: 1000,
               width: "50px",
               height: "50px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
             }}
+            aria-label="Scroll to top"
           >
             <i className="bi bi-arrow-up"></i>
           </button>
