@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
+import SEO from "./SEO";
 
 // Initialize EmailJS (do this once when your app loads)
 emailjs.init('t9SZcWmLIrn5oRGUx'); // Replace with your actual key
@@ -30,6 +31,12 @@ const GetStarted = () => {
 
   return (
     <Container className="my-5">
+      <SEO 
+        title="Get Started | Free Consultation | ELPEAP Group"
+        description="Schedule your free 30-minute consultation to discuss your project needs with our experts."
+        keywords="free consultation, web development quote, digital services"
+        canonicalUrl="https://www.elpeapgroup.co.za/get-started"
+      />
       {/* Header Section */}
       <Row className="mb-5 text-center">
         <Col>

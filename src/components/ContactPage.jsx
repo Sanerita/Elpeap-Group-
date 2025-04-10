@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Alert } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
+import SEO from "./SEO";
 
 // Initialize EmailJS (use the same key as in GetStarted)
 emailjs.init('t9SZcWmLIrn5oRGUx');
@@ -34,6 +35,12 @@ const ContactPage = () => {
 
   return (
     <Container className="my-5">
+            <SEO 
+        title="Contact Us | ELPEAP Group"
+        description="Get in touch with our team for inquiries, support, or partnership opportunities."
+        keywords="contact web developers, digital agency contact, IT support contact"
+        canonicalUrl="https://www.elpeapgroup.co.za/contact"
+      />
       <h1 className="text-center mb-4">Contact Us</h1>
       
       {formSubmitted ? (

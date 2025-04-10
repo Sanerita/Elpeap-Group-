@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SEO from "./SEO";
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
@@ -108,6 +109,12 @@ const Services = () => {
 
   return (
     <div className="container my-5" id="services">
+         <SEO 
+        title="Our Services | ELPEAP Group"
+        description="Explore our professional services including web development, e-commerce solutions, social media marketing, and IT support."
+        keywords="web development services, e-commerce solutions, social media marketing, IT support packages"
+        canonicalUrl="https://www.elpeapgroup.co.za/services"
+      />
       <h2 className="text-center mb-5 display-4 fw-bold">Our Services</h2>
       <div className="row g-4">
         {services.map((service, index) => (
