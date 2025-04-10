@@ -10,7 +10,12 @@ const DiscountPopup = () => {
     const launchDate = new Date();
     launchDate.setDate(launchDate.getDate() + 14);
     const diffDays = Math.ceil((launchDate - new Date()) / (1000 * 60 * 60 * 24));
-    setDaysUntilLaunch(diffDays > 0,2 ? diffDays : 0);
+    setDaysUntilLaunch(diffDays > 0 ? diffDays : 0);
+
+       // 30% chance to show the popup
+       const shouldShowPopup = Math.random() < 0.3;
+       setShow(shouldShowPopup);
+    
   }, []);
 
 
