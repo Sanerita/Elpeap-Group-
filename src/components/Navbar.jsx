@@ -16,10 +16,11 @@ const Navbar = () => {
          <Link to="/" className="navbar-brand">
   <img
     src={Capture} // Use the imported logo
-    alt="My Business Logo"
+    alt="ELPEAP Group Logo - Digital Solutions Provider"
     width="60"
     height="60" // Changed to match width for perfect circle
     className="d-inline-block align-text-top rounded-circle object-fit-cover"
+    loading="lazy" 
   />
 </Link>
 
