@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Modal, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 const DiscountPopup = () => {
   const [show, setShow] = useState(true);
   const [daysUntilLaunch, setDaysUntilLaunch] = useState(14);
