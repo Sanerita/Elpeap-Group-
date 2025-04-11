@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import ContactPage from "./components/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/terms-of-service";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -59,6 +60,7 @@ function App() {
             <Route path="/get-started" element={<GetStarted />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>
         </main>
 

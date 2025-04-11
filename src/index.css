@@ -186,3 +186,11 @@ footer .bi:hover {
 .discount-btn:hover::after {
   left: 100%;
 }
+
+/* Add to your CSS */
+.legal-document {
+  line-height: 1.8;
+}
+.legal-document h2 {
+  color: #45a049; /* Your brand green */
+}
