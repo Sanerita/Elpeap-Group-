@@ -89,4 +89,34 @@ function App() {
   );
 }
 
+<script type="application/ld+json">
+{
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ELPEAP Group",
+    "url": "https://www.elpeapgroup.co.za",
+    "logo": "https://www.elpeapgroup.co.za/android-chrome-512x512.png",
+    "description": "Digital Solutions & Business Services in South Africa",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "36 Dartford Drive",
+      "addressLocality": "Cape Town",
+      "addressRegion": "Western Cape",
+      "postalCode": "7441",
+      "addressCountry": "ZA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+27-78-140-7749",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://www.facebook.com/elpeapgroup",
+      "https://www.linkedin.com/company/elpeapgroup"
+    ]
+  }
+}
+</script>
+
 export default App;
