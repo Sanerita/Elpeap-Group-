@@ -112,6 +112,44 @@ const Services = () => {
           ]
         }
       ]
+    },
+    {
+      icon: "bi-robot",
+      title: "AI Automation",
+      shortDescription: "Custom AI solutions to automate repetitive tasks and boost efficiency.",
+      fullDescription: "We build intelligent automation systems that handle repetitive tasks, process data, and make smart decisions - saving you time and money.",
+      benefits: [
+        "Eliminate manual data entry errors",
+        "Process documents 10x faster with AI",
+        "24/7 automated customer support",
+        "Smart decision-making with data analysis",
+        "Seamless integration with your existing tools"
+      ],
+      packages: [
+        {
+          name: "Basic Automation",
+          price: "R8,000",
+          features: [
+            "1 workflow automation",
+            "Basic AI data processing",
+            "Zapier/Make.com integration",
+            "1-month support"
+          ],
+          bestFor: "Simple task automation"
+        },
+        {
+          name: "Enterprise AI",
+          price: "R25,000+",
+          features: [
+            "Custom AI model development",
+            "Multiple workflow automations",
+            "Document processing with AI",
+            "Chatbot integration",
+            "3-month support"
+          ],
+          bestFor: "Businesses needing advanced AI"
+        }
+      ]
     }
   ];
 
@@ -121,7 +159,7 @@ const Services = () => {
 
   return (
     <div className="container my-5" id="services">
-        <SEO 
+      <SEO 
         title="ELPEAP Group | Digital Solutions & Business Services"
         description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
         keywords="web development, South Africa, e-commerce, digital marketing"
@@ -165,6 +203,7 @@ const Services = () => {
                                   <li key={j}>{feature}</li>
                                 ))}
                               </ul>
+                              {pkg.bestFor && <p className="small text-muted mb-0">Best for: {pkg.bestFor}</p>}
                             </div>
                           </div>
                         </div>

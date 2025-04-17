@@ -95,6 +95,7 @@ const GetStarted = () => {
                   <option>E-commerce Store</option>
                   <option>Social Media Marketing</option>
                   <option>IT Support</option>
+                  <option>AI Automation</option>
                   <option>Multiple Services</option>
                 </Form.Select>
               </Form.Group>
