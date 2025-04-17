@@ -35,11 +35,12 @@ const ContactPage = () => {
 
   return (
     <Container className="my-5">
-            <SEO 
-        title="Contact Us | ELPEAP Group"
-        description="Get in touch with our team for inquiries, support, or partnership opportunities."
-        keywords="contact web developers, digital agency contact, IT support contact"
-        canonicalUrl="https://www.elpeapgroup.co.za/contact"
+           <SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
       <h1 className="text-center mb-4">Contact Us</h1>
       

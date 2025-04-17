@@ -1,9 +1,19 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import SEO from './SEO';
 
 const PrivacyPolicy = () => {
   return (
     <Container className="my-5">
+
+<SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
+      />
+
       <h1 className="mb-4">Privacy Policy</h1>
       <p className="text-muted">Last Updated: {new Date().toLocaleDateString()}</p>
       

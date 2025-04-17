@@ -31,11 +31,12 @@ const GetStarted = () => {
 
   return (
     <Container className="my-5">
-      <SEO 
-        title="Get Started | Free Consultation | ELPEAP Group"
-        description="Schedule your free 30-minute consultation to discuss your project needs with our experts."
-        keywords="free consultation, web development quote, digital services"
-        canonicalUrl="https://www.elpeapgroup.co.za/get-started"
+     <SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
       {/* Header Section */}
       <Row className="mb-5 text-center">

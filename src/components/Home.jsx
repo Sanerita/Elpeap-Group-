@@ -8,10 +8,11 @@ const Home = () => {
   return (
     <div>
       <SEO 
-        title="ELPEAP Group | Digital Solutions for Your Business"
-        description="Professional web development, e-commerce solutions, social media marketing, and IT support services in South Africa."
-        keywords="web development, e-commerce, social media marketing, IT support, South Africa"
-        canonicalUrl="https://www.elpeapgroup.co.za/"
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
       <Hero />
       <About />

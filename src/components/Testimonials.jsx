@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from './SEO';
 
 const Testimonials = () => {
     const testimonials = [
@@ -17,6 +18,15 @@ const Testimonials = () => {
     ];
   
     return (
+<>
+<SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
+      />
+
       <div className="container my-5">
         <h2 className="text-center mb-5 display-4 fw-bold">What Our Clients Say</h2>
         <div className="row g-4">
@@ -35,6 +45,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
+      </>
     );
   };
 

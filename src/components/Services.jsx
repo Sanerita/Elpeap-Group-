@@ -109,11 +109,12 @@ const Services = () => {
 
   return (
     <div className="container my-5" id="services">
-         <SEO 
-        title="Our Services | ELPEAP Group"
-        description="Explore our professional services including web development, e-commerce solutions, social media marketing, and IT support."
-        keywords="web development services, e-commerce solutions, social media marketing, IT support packages"
-        canonicalUrl="https://www.elpeapgroup.co.za/services"
+        <SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
       <h2 className="text-center mb-5 display-4 fw-bold">Our Services</h2>
       <div className="row g-4">

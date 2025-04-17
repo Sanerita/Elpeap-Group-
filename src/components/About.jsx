@@ -1,10 +1,20 @@
 import React from "react";
 import elpeapgroup from "../assets/elpeapgroup.png"; // Import the logo
 import DiscountPopup from "./DiscountPopup"; 
+import SEO from './SEO'; 
 
 const About = () => {
   return (
+<>
 
+<SEO 
+        title="ELPEAP Group | Digital Solutions & Business Services"
+        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
+        keywords="web development, South Africa, e-commerce, digital marketing"
+        url="https://www.elpeapgroup.co.za"
+        image="https://www.elpeapgroup.co.za/social-preview.jpg"
+      />
+    
     
     <div className="container my-5">
       <DiscountPopup />
@@ -120,6 +130,7 @@ const About = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
