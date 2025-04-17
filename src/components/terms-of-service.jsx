@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import SEO from "./SEO";
 
 const TermsOfService = () => {
   return (
@@ -34,6 +35,7 @@ const TermsOfService = () => {
           <li>E-commerce solutions</li>
           <li>Social media marketing</li>
           <li>Technical support services</li>
+          <li>AI Automation</li>
         </ul>
         <p>
           All services are subject to separate service agreements.
