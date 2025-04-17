@@ -1,12 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 1440px; /* Increased from 1280px for more spacious layout */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0; /* Removed padding to allow full-width sections */
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
-
-
-
-
-

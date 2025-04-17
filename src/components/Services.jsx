@@ -166,14 +166,18 @@ const Services = () => {
         url="https://www.elpeapgroup.co.za"
         image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
-      <h2 className="text-center mb-5 display-4 fw-bold">Our Services</h2>
+      {/* Replace the current h2 with this */}
+      <div className="text-center mb-5">
+    <h2 className="fw-bold mb-3" style={{ fontSize: '2.75rem' }}>Our Services</h2>
+    
+  </div>
       <div className="row g-4">
         {services.map((service, index) => (
           <div key={index} className="col-md-6 col-lg-3">
             <div className="card h-100 border-0 shadow-sm">
               <div className="card-body text-center p-4">
                 <i className={`bi ${service.icon} display-4 text-success mb-3`}></i>
-                <h3 className="card-title fw-bold mb-3">{service.title}</h3>
+                <h3 className="card-title fw-bold mb-3 text-center">{service.title}</h3>
                 <p className="card-text text-muted">{service.shortDescription}</p>
                 <button 
                   onClick={() => toggleService(index)}
