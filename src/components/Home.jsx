@@ -3,9 +3,11 @@ import Hero from "./Hero";
 import About from "./About";
 import CTA from "./CTA";
 import SEO from "./SEO";
+import ErrorBoundary from './ErrorBoundary'; 
 
 const Home = () => {
   return (
+    <ErrorBoundary>
     <div>
       <SEO 
         title="ELPEAP Group | Digital Solutions & Business Services"
@@ -15,9 +17,12 @@ const Home = () => {
         image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
       <Hero />
+     
       <About />
+   
       <CTA />
     </div>
+    </ErrorBoundary>
   );
 };
 

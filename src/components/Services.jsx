@@ -91,13 +91,25 @@ const Services = () => {
       packages: [
         {
           name: "Basic Support",
-          price: "R1,500/month",
-          features: ["Remote support", "5-hour response", "System checks", "Email support"]
+          price: "R2,500/month",
+          features: [
+            "Remote support (unlimited)",
+            "5-hour response time (business hours)",
+            "Weekly system health checks",
+            "Email/chat support",
+            "Max 5 critical issues/month"  
+          ],
+          bestFor: "Small businesses with <5 employees"
         },
         {
-          name: "Premium Support",
-          price: "R3,500/month",
-          features: ["24/7 support", "1-hour response", "On-site visits", "Preventive maintenance"]
+          name: "Business Support",
+          price: "R4,500/month",
+          features: [
+            "24/5 support (Mon-Fri)",
+            "2-hour response",
+            "2 on-site visits/month",
+            "Priority ticket handling"
+          ]
         }
       ]
     }
