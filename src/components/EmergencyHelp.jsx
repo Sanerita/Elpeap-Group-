@@ -35,14 +35,15 @@ const EmergencyHelp = () => {
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_subject" value="🚨 WEBSITE EMERGENCY - Immediate Attention Required" />
               <input type="hidden" name="_autoresponse" value="We've received your emergency request! Our tech team is reviewing your case now and will contact you within 30 minutes. For urgent follow-ups, WhatsApp +27 78 140 7749." />
-              <input type="hidden" name="_next" value="https://elpeapgroup.co.za/thank-you" />
+              <input type="hidden" name="_autoresponse" value="custom" />
+              
               
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">Your Name *</label>
                 <input 
                   type="text" 
                   id="name" 
-                  name="name" 
+                  name="name"  
                   className="form-control" 
                   required 
                 />

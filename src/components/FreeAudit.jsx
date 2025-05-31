@@ -61,7 +61,7 @@ const FreeAudit = () => {
                 <input type="hidden" name="_template" value="table" />
                 <input type="hidden" name="_autoresponse" value="Thank you for requesting a website audit! We're analyzing your site and will send your 23-point report within 48 hours. For urgent inquiries, WhatsApp +27 78 140 7749" />
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://elpeapgroup.co.za/thank-you" />
+                
 
                 <div className="mb-3">
                   <label htmlFor="name" className="form-label">Your Name *</label>
