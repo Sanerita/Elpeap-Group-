@@ -1,153 +1,105 @@
 import React, { useState } from "react";
 import SEO from "./SEO";
+ 
 
 const Services = () => {
   const [expandedService, setExpandedService] = useState(null);
 
   const services = [
     {
-      icon: "bi-laptop",
-      title: "Web Development",
-      shortDescription: "We create stunning, responsive websites tailored to your business needs.",
-      fullDescription: "Our custom web development services help establish your digital presence with mobile-friendly, fast-loading websites that convert visitors into customers.",
+      icon: "bi-tools",
+      title: "24-Hour Emergency Fixes",
+      shortDescription: "Critical website issues resolved within 24 hours - guaranteed.",
+      fullDescription: "When your website is down, hacked, or malfunctioning, our rapid-response team gets you back online fast.",
       benefits: [
-        "Boost credibility with a professional online presence",
-        "Increase customer engagement 24/7",
-        "Improve search engine rankings",
-        "Mobile-optimized for all devices"
+        "Average 6-hour resolution time",
+        "Pay only when we fix your issue",
+        "No long-term contracts",
+        "Priority support for emergency clients"
       ],
       packages: [
         {
-          name: "Starter Website",
-          price: "R5,000",
-          features: ["5-page website", "Mobile responsive", "Basic SEO setup", "1-month support"]
+          name: "Critical Fix",
+          price: "R3,500",
+          features: ["Downtime resolution", "Bug fixes", "24h SLA", "1 emergency fix"],
+          bestFor: "Broken features or offline sites"
         },
         {
-          name: "Business Website",
-          price: "R10,000",
-          features: ["10-page website", "Custom design", "Advanced SEO", "Contact forms", "3-month support"]
+          name: "Security Rescue",
+          price: "R6,000",
+          features: ["Malware removal", "Firewall setup", "Backup restoration", "Prevention report"]
         }
       ]
     },
     {
-      icon: "bi-cart",
-      title: "E-commerce Solutions",
-      shortDescription: "Build and manage your online store with seamless payment and inventory systems.",
-      fullDescription: "Transform your business with a complete e-commerce solution that handles products, payments, and shipping effortlessly.",
+      icon: "bi-shield-check",
+      title: "Monthly Care Plans",
+      shortDescription: "Proactive protection to prevent emergencies.",
+      fullDescription: "Our monthly retainers keep your website secure, updated, and performing at its best.",
       benefits: [
-        "Sell products 24/7 worldwide",
-        "Integrated payment gateways (PayFast, Ozow)",
-        "Inventory management system",
-        "Secure checkout process"
+        "99.9% uptime guarantee",
+        "Weekly security scans",
+        "Speed optimization",
+        "Emergency support included"
       ],
       packages: [
         {
-          name: "Basic Online Store",
-          price: "R15,000",
-          features: ["50 products", "PayFast integration", "Basic design", "Inventory system"]
+          name: "Basic Care",
+          price: "R2,999/month",
+          features: ["Weekly updates", "Daily backups", "Security monitoring", "2h emergency response"]
         },
         {
-          name: "Premium E-commerce",
-          price: "R25,000",
-          features: ["Unlimited products", "Multi-payment options", "Custom design", "Advanced analytics"]
-        }
-      ]
-    },
-    {
-      icon: "bi-megaphone",
-      title: "Social Media Marketing",
-      shortDescription: "Grow your brand with targeted campaigns and engaging content strategies.",
-      fullDescription: "We develop data-driven social media strategies that increase your brand awareness and customer engagement.",
-      benefits: [
-        "Increase brand visibility",
-        "Target your ideal customers",
-        "Generate quality leads",
-        "Build customer relationships"
-      ],
-      packages: [
-        {
-          name: "Starter Package",
-          price: "R2,500/month",
-          features: ["2 platforms (FB & IG)", "8 posts/month", "Basic analytics", "Community management"]
-        },
-        {
-          name: "Growth Package",
-          price: "R5,000/month",
-          features: ["4 platforms", "16 posts/month", "Ad management", "Detailed reporting"]
-        }
-      ]
-    },
-    {
-      icon: "bi-headset",
-      title: "Technical Support",
-      shortDescription: "Reliable IT support for hardware, software, and network troubleshooting.",
-      fullDescription: "Our expert technical support keeps your business running smoothly with prompt problem resolution.",
-      benefits: [
-        "Minimize downtime",
-        "Secure your systems",
-        "Regular maintenance",
-        "Expert troubleshooting"
-      ],
-      packages: [
-        {
-          name: "Basic Support",
-          price: "R2,500/month",
-          features: [
-            "Remote support (unlimited)",
-            "5-hour response time (business hours)",
-            "Weekly system health checks",
-            "Email/chat support",
-            "Max 5 critical issues/month"  
-          ],
-          bestFor: "Small businesses with <5 employees"
-        },
-        {
-          name: "Business Support",
-          price: "R4,500/month",
-          features: [
-            "24/5 support (Mon-Fri)",
-            "2-hour response",
-            "2 on-site visits/month",
-            "Priority ticket handling"
-          ]
+          name: "Business Care",
+          price: "R5,999/month",
+          features: ["24/7 monitoring", "Hourly backups", "Performance tweaks", "1h emergency response"]
         }
       ]
     },
     {
       icon: "bi-robot",
       title: "AI Automation",
-      shortDescription: "Custom AI solutions to automate repetitive tasks and boost efficiency.",
-      fullDescription: "We build intelligent automation systems that handle repetitive tasks, process data, and make smart decisions - saving you time and money.",
+      shortDescription: "Replace manual work with smart automation.",
+      fullDescription: "We build custom AI solutions that handle repetitive tasks and data processing 24/7.",
       benefits: [
-        "Eliminate manual data entry errors",
-        "Process documents 10x faster with AI",
+        "Reduce human errors by 90%",
+        "Process documents 10x faster",
         "24/7 automated customer support",
-        "Smart decision-making with data analysis",
-        "Seamless integration with your existing tools"
+        "Seamless tool integration"
       ],
       packages: [
         {
-          name: "Basic Automation",
+          name: "Workflow Automation",
           price: "R8,000",
-          features: [
-            "1 workflow automation",
-            "Basic AI data processing",
-            "Zapier/Make.com integration",
-            "1-month support"
-          ],
-          bestFor: "Simple task automation"
+          features: ["1 process automated", "Zapier integration", "1-month support"]
         },
         {
-          name: "Enterprise AI",
+          name: "Custom AI Solution",
           price: "R25,000+",
-          features: [
-            "Custom AI model development",
-            "Multiple workflow automations",
-            "Document processing with AI",
-            "Chatbot integration",
-            "3-month support"
-          ],
-          bestFor: "Businesses needing advanced AI"
+          features: ["Tailored AI model", "Multiple automations", "3-month support"]
+        }
+      ]
+    },
+    {
+      icon: "bi-lightning-charge",
+      title: "Website Rescues",
+      shortDescription: "Fix underperforming websites that lose sales.",
+      fullDescription: "We diagnose and repair slow, confusing, or outdated websites that frustrate visitors.",
+      benefits: [
+        "Boost conversion rates by 30-200%",
+        "Fix mobile usability issues",
+        "Optimize checkout flows",
+        "Improve SEO rankings"
+      ],
+      packages: [
+        {
+          name: "Performance Audit",
+          price: "R1,500",
+          features: ["23-point health check", "Priority fixes list", "Speed report"]
+        },
+        {
+          name: "Full Revamp",
+          price: "R12,000+",
+          features: ["Redesign", "Content rewrite", "SEO optimization", "3-month support"]
         }
       ]
     }
@@ -160,54 +112,89 @@ const Services = () => {
   return (
     <div className="container my-5" id="services">
       <SEO 
-        title="ELPEAP Group | Digital Solutions & Business Services"
-        description="Professional web development, e-commerce solutions, and digital marketing services in South Africa"
-        keywords="web development, South Africa, e-commerce, digital marketing"
-        url="https://www.elpeapgroup.co.za"
+        title="ELPEAP Group | Emergency Website Fixes & AI Automation"
+        description="24-hour website emergency repairs and business automation services in South Africa. Pay only when we fix your problem."
+        keywords="website emergency, South Africa, AI automation, web developer, tech support"
+        url="https://www.elpeapgroup.co.za/services"
         image="https://www.elpeapgroup.co.za/social-preview.jpg"
       />
-      {/* Replace the current h2 with this */}
+
       <div className="text-center mb-5">
-    <h2 className="fw-bold mb-3" style={{ fontSize: '2.75rem' }}>Our Services</h2>
-    
-  </div>
+        <h2 className="fw-bold mb-3" style={{ fontSize: '2.75rem' }}>
+          <span className="text-danger">Emergency</span> & <span className="text-success">Preventive</span> Solutions
+        </h2>
+        <p className="lead">
+          We fix <strong>urgent website issues today</strong> and help prevent <strong>tomorrow's problems</strong>
+        </p>
+      </div>
+
+      {/* Emergency Alert Banner */}
+      <div className="alert alert-danger d-flex align-items-center mb-5">
+        <i className="bi bi-exclamation-triangle-fill fs-3 me-3"></i>
+        <div>
+          <strong>Need immediate help?</strong> Our emergency team is standing by. 
+          <a href="/emergency-help" className="alert-link ms-2">Request 24-hour support →</a>
+        </div>
+      </div>
+
       <div className="row g-4">
         {services.map((service, index) => (
           <div key={index} className="col-md-6 col-lg-3">
-            <div className="card h-100 border-0 shadow-sm">
+            <div className={`card h-100 border-0 shadow-sm ${service.title.includes('Emergency') ? 'border-danger border-2' : ''}`}>
               <div className="card-body text-center p-4">
-                <i className={`bi ${service.icon} display-4 text-success mb-3`}></i>
-                <h3 className="card-title fw-bold mb-3 text-center">{service.title}</h3>
+                <i className={`bi ${service.icon} display-4 ${service.title.includes('Emergency') ? 'text-danger' : 'text-success'} mb-3`}></i>
+                <h3 className="card-title fw-bold mb-3">{service.title}</h3>
                 <p className="card-text text-muted">{service.shortDescription}</p>
                 <button 
                   onClick={() => toggleService(index)}
-                  className="btn btn-outline-success"
+                  className={`btn ${service.title.includes('Emergency') ? 'btn-outline-danger' : 'btn-outline-success'}`}
                 >
-                  {expandedService === index ? "Show Less" : "Learn More"}
+                  {expandedService === index ? "Show Less" : "See Options"}
                 </button>
                 
                 {expandedService === index && (
                   <div className="mt-3 text-start">
-                    <h5 className="fw-bold">Benefits:</h5>
-                    <ul className="ps-3">
+                    <div className="d-flex align-items-center mb-2">
+                      <i className="bi bi-check-circle-fill text-success me-2"></i>
+                      <h5 className="fw-bold mb-0">Key Benefits</h5>
+                    </div>
+                    <ul className="ps-3 small">
                       {service.benefits.map((benefit, i) => (
-                        <li key={i}>{benefit}</li>
+                        <li key={i} className="mb-1">{benefit}</li>
                       ))}
                     </ul>
                     
-                    <h5 className="fw-bold mt-3">Packages:</h5>
+                    <div className="d-flex align-items-center mt-3 mb-2">
+                      <i className="bi bi-credit-card text-success me-2"></i>
+                      <h5 className="fw-bold mb-0">Packages</h5>
+                    </div>
                     <div className="row">
                       {service.packages.map((pkg, i) => (
                         <div key={i} className="col-12 mb-3">
-                          <div className="card border-success">
-                            <div className="card-body">
-                              <h6 className="card-title fw-bold">{pkg.name} - {pkg.price}</h6>
-                              <ul className="small ps-3">
+                          <div className={`card ${service.title.includes('Emergency') ? 'border-danger' : 'border-success'}`}>
+                            <div className="card-body p-3">
+                              <h6 className="card-title fw-bold">
+                                {pkg.name} <span className="float-end">{pkg.price}</span>
+                              </h6>
+                              <ul className="small ps-3 mb-2">
                                 {pkg.features.map((feature, j) => (
                                   <li key={j}>{feature}</li>
                                 ))}
                               </ul>
-                              {pkg.bestFor && <p className="small text-muted mb-0">Best for: {pkg.bestFor}</p>}
+                              {pkg.bestFor && (
+                                <p className="small text-muted mb-0">
+                                  <i className="bi bi-info-circle me-1"></i>
+                                  {pkg.bestFor}
+                                </p>
+                              )}
+                              {service.title.includes('Emergency') && (
+                                <a 
+                                  href="/emergency-help" 
+                                  className="btn btn-sm btn-danger mt-2 w-100"
+                                >
+                                  Get Help Now
+                                </a>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -220,6 +207,8 @@ const Services = () => {
           </div>
         ))}
       </div>
+
+     
     </div>
   );
 };

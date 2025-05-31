@@ -69,10 +69,10 @@ const ContactPage = () => {
       <i className="bi bi-geo-alt fs-4 mt-1 me-3"></i>
       <span>36 Dartford Drive, Parklands, South Africa</span>
     </div>
-    <div className="d-flex align-items-center mb-3">
+    {/* <div className="d-flex align-items-center mb-3">
       <i className="bi bi-telephone fs-4 me-3"></i>
       <span>+27781407749</span>
-    </div>
+    </div> */}
     <div className="d-flex align-items-center mb-3">
       <i className="bi bi-envelope fs-4 me-3"></i>
       <span>info@elpeapgroup.co.za</span>

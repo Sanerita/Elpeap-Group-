@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Services from "./components/Services";
-import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import ContactPage from "./components/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/terms-of-service";
+import EmergencyHelp from "./components/EmergencyHelp";
+import FreeAudit from "./components/FreeAudit";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -57,7 +58,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/get-started" element={<GetStarted />} />
+            <Route path="/emergency-help" element={<EmergencyHelp />} />
+            <Route path="/free-audit" element={<FreeAudit />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
@@ -68,21 +70,25 @@ function App() {
 
         {/* Enhanced Back to Top Button with ARIA label */}
         {showButton && (
-          <button
-            onClick={scrollToTop}
-            className="btn btn-success btn-lg rounded-circle shadow"
-            style={{
-              position: "fixed",
-              bottom: "20px",
-              right: "20px",
-              zIndex: 1000,
-              width: "50px",
-              height: "50px",
-            }}
-            aria-label="Scroll to top"
-          >
-            <i className="bi bi-arrow-up"></i>
-          </button>
+         <button
+  onClick={scrollToTop}
+  className="btn btn-success btn-lg rounded-circle shadow"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    left: "50%",
+    transform: "translateX(-50%)",
+    zIndex: 1000,
+    width: "50px",
+    height: "50px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }}
+  aria-label="Scroll to top"
+>
+  <i className="bi bi-arrow-up"></i>
+</button>
         )}
       </div>
     </Router>

@@ -15,11 +15,11 @@ const Footer = () => {
                 <span itemProp="addressLocality">Parklands</span>,{" "}
                 <span itemProp="addressCountry">South Africa</span>
               </li>
-              <li className="mb-2" itemProp="telephone">
+              {/* <li className="mb-2" itemProp="telephone">
                 <a href="tel:+27781407749" className="text-white text-decoration-none hover-light">
                   <i className="bi bi-telephone me-2"></i>+27781407749
                 </a>
-              </li>
+              </li> */}
               <li className="mb-2" itemProp="email">
                 <a href="mailto:info@elpeapgroup.co.za" className="text-white text-decoration-none hover-light">
                   <i className="bi bi-envelope me-2"></i>info@elpeapgroup.co.za
@@ -51,13 +51,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <a 
-                  href="/get-started"
-                  className="text-white text-decoration-none hover-light d-inline-block"
-                  aria-label="Get started with our services"
-                >
-                  <i className="bi bi-rocket me-2"></i>Get Started
-                </a>
+               
               </li>
               <li className="mb-2">
                 <a 
